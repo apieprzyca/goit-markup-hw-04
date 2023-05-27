@@ -174,9 +174,19 @@ nav {
   font-size: 14px;
   color: #757575;
   background-color: #ffffff;
-  padding-left: 46px;
+  padding-left: 10px;
   display: inline;
 }
+.envelope-smartphone {
+  fill: #757575;
+}
+.envelope-smartphone:focus {
+  fill: #2196f3;
+}
+.envelope-smartphone:hover {
+  fill: #2196f3;
+}
+
 h1 {
   font-size: 44px;
   font-weight: 900;
@@ -303,7 +313,7 @@ figcaption {
   margin-bottom: 0;
   padding: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .teamcard-icon-item {
   width: 44px;
@@ -348,6 +358,7 @@ main {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 50;
+  padding-top: 94px;
 }
 .logos-client-list {
   list-style: none;
@@ -356,6 +367,7 @@ main {
   padding: 0;
   display: flex;
   gap: 36px;
+  padding-bottom: 94px;
 }
 .client-logo-item {
   width: 170px;
@@ -482,9 +494,7 @@ footer {
   justify-content: flex-start;
   padding: 0;
 }
-.footer-bottom {
-  padding-bottom: 60px;
-}
+
 .footer-flex {
   display: flex;
   align-items: baseline;
@@ -518,7 +528,6 @@ footer {
 .contact-links-mail :not(:first-child) {
   font-size: 14px;
   line-height: 1.7;
-
   color: rgba(255, 255, 255, 0.6);
 }
 .contact-links-mail {
