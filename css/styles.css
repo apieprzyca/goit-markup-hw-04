@@ -193,17 +193,27 @@ h1 {
 }
 .header-place {
   background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img-background.jpg);
 }
 
 button {
   background-color: #2196f3;
   color: #ffffff;
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.875;
   width: 200px;
   padding: 10px 0;
   margin: 30px 700px 200px 700px;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  text-align: center;
 }
 h3 {
   font-size: 14px;
@@ -225,17 +235,20 @@ ul {
   list-style-type: none;
 }
 .team-members {
-  width: 270px;
-  height: 368px;
-  padding: 0px 0px 108px 0px;
+  background-color: #ffffff;
   margin: 0;
-  border: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 .team-member-names {
   margin: 0;
   border-bottom: 0px;
   border-top: 0px;
   border-style: none;
+  display: flex;
+  justify-content: center;
 }
 .team-list-photos-item {
   display: block;
@@ -256,6 +269,8 @@ ul {
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
 }
 .paragraph {
   margin: 0 auto;
@@ -281,6 +296,36 @@ figcaption {
   line-height: 1, 19;
   color: #212121;
   background-color: #ffffff;
+}
+.teamcard-icons-list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.teamcard-icon-item {
+  width: 44px;
+  height: 44px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  padding-left: 11px;
+  padding-top: 11px;
+}
+.teamcard-icon-item:hover .icon-teamcard,
+.teamcard-icon-item:focus .icon-teamcard {
+  fill: #ffffff;
+}
+.icon-teamcard {
+  fill: #afb1b8;
+}
+.teamcard-icon-item:hover,
+.teamcard-icon-item:focus {
+  border: 1px solid #2196f3;
+  background-color: #2196f3;
 }
 main {
   background: #ffffff;
